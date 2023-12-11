@@ -5,7 +5,7 @@ return {
 		"MunifTanjim/nui.nvim",
 		'rcarriga/nvim-notify'
 	},
-	enabled = true,
+	enabled = false,
 	config = function ()
 		-- local border_style = {
 		-- 	top_left    = "┌", top    = "─",    top_right = "┐",

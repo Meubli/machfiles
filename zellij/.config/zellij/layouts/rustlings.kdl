@@ -1,0 +1,19 @@
+layout {
+    pane size=1 borderless=true {
+        plugin location="zellij:tab-bar"
+    }
+    pane split_direction="vertical" {
+        pane size="30%" cwd="/home/nico/Logiciels/rustlings"{
+            command "rustlings"
+            args "watch"
+        }
+        pane size="70%" cwd="/home/nico/Logiciels/rustlings"{
+            edit "."
+            focus true
+        }
+    }
+    pane size=2 borderless=true {
+        plugin location="zellij:status-bar"
+    }
+}
+
