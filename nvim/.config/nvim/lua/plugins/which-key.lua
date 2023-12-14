@@ -11,7 +11,7 @@ return { 'folke/which-key.nvim', opts = {},
                 s = {
                     name = '[s]earch',
                     f = { require('telescope.builtin').find_files, '[f]iles' },
-                    g = { require('telescope.builtin').live_grep, '[g]rep'},
+                    g = { require('telescope').extensions.live_grep_args.live_grep_args, '[g]rep'},
                     G = { require('telescope.builtin').git_files, '[G]it files'},
                     r = { require('telescope.builtin').resume, '[r]esume'},
                     d = { require('telescope.builtin').diagnostics, '[d]iagnostics'},
@@ -40,7 +40,7 @@ return { 'folke/which-key.nvim', opts = {},
                 i = { require('telescope.builtin').lsp_implementations, '[i]mplementations'},
                 t = { vim.lsp.buf.type_definition, '[t]pe definition'},
             },
-            ['<C-q>'] = { vim.lsp.buf.signature_help, 'Signature Documentation' }
+            ['<C-q>'] = { vim.lsp.buf.signature_help, 'Signature Documentation' },
         })
 
     end
